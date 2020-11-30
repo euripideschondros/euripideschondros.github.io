@@ -1,0 +1,40 @@
+.gallery{
+    text-align: center;
+      font-size: 65px;
+  }
+
+  .imgcontainer{
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.imgcontainer > img{
+	width: auto;
+	height: 300px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+.imgcontainer > img:hover{
+	transform: scale(1.1);
+}
+
+@media screen and (max-width:1024px){
+	.gallery{
+		font-size: 35px;
+	}
+	.imgcontainer > img{
+		height: 150px;
+	}
+}
+
+@media screen and (max-width:600px){
+	.gallery{
+		font-size: 35px;
+	}
+	.imgcontainer > img{
+		height: auto;
+		width: 140px;
+	}
+}

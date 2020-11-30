@@ -1,0 +1,35 @@
+.pricelist{
+    text-align: center;
+    font-size: 65px;
+  }
+
+  .productList {
+    width: 700px;
+    font-size: 25px;
+    color: rgb(209, 73, 73);
+}
+.product {
+  border-bottom: 1px dashed #aaa;
+}
+.product .name {
+    font-weight: bold;
+}
+.product .price {
+    float: right;
+}
+
+  @media screen and (max-width:1024px){
+    .pricelist{font-size: 45px;}
+    .productList{
+      width:200px;
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    .pricelist{font-size: 30px;}
+    .productList{
+      width:200px;
+      font-size: 10px;
+    }
+  }

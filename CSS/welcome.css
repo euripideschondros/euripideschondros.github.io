@@ -1,0 +1,42 @@
+.welcome{
+    position: relative;
+    height: 100%;
+}
+
+.welcome > h1{
+    text-align: center;
+    font-size: 65px;
+}
+
+.welcome > p{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 40px;
+    border-bottom: 5px solid black;
+}
+
+@media screen and (max-width:1024px)
+{
+    .welcome > h1, p{
+        width: 100%;
+    }
+    .welcome > h1{
+        font-size: 35px;
+    }
+    .welcome > p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    .welcome > h1, p{
+        width: 100%;
+    }
+    .welcome > h1{
+        font-size: 25px;
+    }
+    .welcome > p{
+        font-size: 15px;
+    }
+}
