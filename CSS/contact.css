@@ -1,0 +1,46 @@
+.contact h5{
+    font-size: 65px;
+    text-align: center;
+}
+
+.container-contact{
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+      
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit]{
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 14px 40px;
+    background-color: #555555;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+input[type=submit]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width:600px){
+    .contact h5{
+        font-size: 45px;
+    }
+}
