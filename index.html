@@ -7,62 +7,71 @@
         <meta name="description" content="This is a site about MEK Hair Studio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Company - MEK Hair Studio - Birmingham</title>
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="..\images\favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/topnavbar.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/fpic.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/welcome.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/services.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/where.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/team.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/gallery.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/pricelist.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/contact.css">
-        <link rel="stylesheet" type="text/css" href="euripideschondros.github.io/CSS/footer.css">
+        <link rel="stylesheet" type="text/css" href="..\css\topBtn.css">
+        <link rel="stylesheet" type="text/css" href="..\css\topnavbar.css">
+        <link rel="stylesheet" type="text/css" href="..\css\fpic.css">
+        <link rel="stylesheet" type="text/css" href="..\css\welcome.css">
+        <link rel="stylesheet" type="text/css" href="..\css\services.css">
+        <link rel="stylesheet" type="text/css" href="..\css\where.css">
+        <link rel="stylesheet" type="text/css" href="..\css\team.css">
+        <link rel="stylesheet" type="text/css" href="..\css\gallery.css">
+        <link rel="stylesheet" type="text/css" href="..\css\pricelist.css">
+        <link rel="stylesheet" type="text/css" href="..\css\contact.css">
+        <link rel="stylesheet" type="text/css" href="..\css\footer.css">
+        <link rel="stylesheet" type="text/css" href="..\css\imgstyle.css">
         
-        <script src="euripideschondros.github.io/JavaScript/navbar.js"></script>
+        <script src="..\JavaScript\topBtn.js"></script>
+        <script src="..\JavaScript\navbar.js"></script>
+        <script src="..\JavaScript\teameff.js"></script>
+        <script src="..\JavaScript\pricelist.js"></script>
+        
     </head>
 
     <body>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
         <nav class="topnav" id="myTopnav">
-            <img id="navlogo" src="images\mekhairstudio.png" alt="MEK Logo">
-            <a href="#contact" class="active">Contact</a>
-            <a href="#prices">Prices</a>
-            <a href="#services">Services</a>
-            <a href="#team">Team</a>
-            <a href="#company">Company</a>
-            <a href="#home">Home</a>
+            <img id="navlogo" src="..\images\meklogo.jpg" alt="MEK Logo">
+            <a href="#contactsection" class="active">Contact</a>
+            <a href="#pricesection">Prices</a>
+            <a href="#teamsection">Team</a>
+            <a href="#servicessection">Services</a>
+            <a href="#companysection">Company</a>
+            <a href="#homesection">Home</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
         </nav>
 
-        <div class="fpic">
-            <img id="fpic" src="images\first.jpg" alt="hair studio">
+        <div class="fpic" id="homesection">
+            <img id="fpic" src="..\images\first.jpg" alt="hair studio">
             <div class="abouttext">
-                MEK Hair Studio
+                <img id="mek" src="..\images\meklogo.jpg">
             </div>
-            <button class="btn">About Us</button>
         </div>
 
-        <div class="welcome">
+        <div class="welcome" id="companysection">
             <h1>Welcome</h1>
             <p>MEK Hair Studio and the Hair Experts Irene and Katerina,<br> for more than 10 years,<br>
                  provides the highest quality services for your hair and beauty.<br>
                 From city of Kavala in Greece now to Birmingham.</p>
         </div>
 
+        <div class="serv" id="servicessection">Services</div>
+
         <div class="row">
             <div class="column">
-                <img src="images\cuts.png" alt="cuts">
+                <img id="cutimg" src="..\images\cuts.png" alt="cuts">
                 <h6>Cuts</h6>
             </div>
             <div class="column">
-                <img src="images\therapy.png" alt="therapy">
+                <img id="therapyimg" src="..\images\therapy.png" alt="therapy">
                 <h6>Therapies</h6>
             </div>
             <div class="column">
-                <img src="images\styling.png" alt="styling">
+                <img id="stylingimg" src="..\images\styling.png" alt="styling">
                 <h6>Styling</h6>
             </div>
         </div>
@@ -70,49 +79,94 @@
         
         <div class="container">
             <img src="">
-            <div class="centered"><a href="#where">Where to find us</a></div>
+            <div class="centered"><a href="#contactsection">Drive to MEK Hair Studio</a></div>
         </div>
         
-        <div class="team"><h2>Team</h2></div>
+        <div class="team" id="teamsection"><h2>Team</h2></div>
 
         <div class="flex-container">
-            <div><img id="irene" src="images\itsme.jpg" height="100px" width="100px"></div>
+            <div class="ireneimg"><img id="irene" src="..\images\itsme.jpg" height="100px" width="100px"></div>
             <div><p>Hi, my name is Irene <br>and i' m the founder of MEK Hair Studio<br>
             I start when i was 16.<br> Thanks a lot.</p></div>
             <div><p>Hi, my name is Katerina <br>and i' m the co- founder of MEK Hair Studio<br>
                 I start when i was 16.<br> Thanks a lot.</p></div>
-            <div><img id="katerina" src="images\itsme.jpg" height="100px" width="100px"></div>
+            <div><img id="katerina" src="..\images\itsme.jpg" height="100px" width="100px"></div>
         </div>
 
         <div class="gallery"><h2>Gallery</h2></div>
         <div class="imgcontainer">
-            <img src="images\1.png">
-            <img src="images\2.jpg">
-            <img src="images\3.jpg">
-            <img src="images\4.jpg">
-            <img src="images\5.jpg">
-            <img src="images\6.jpg">
+            <img id="img1" src="..\images\1.png">
+            <img id="img2" src="..\images\2.jpg">
+            <img id="img3" src="..\images\3.jpg">
+            <img id="img4" src="..\images\4.jpg">
+            <img id="img5" src="..\images\5.jpg">
+            <img id="img6" src="..\images\6.jpg">
         </div>
 
-        <div class="pricelist"><h2>Pricelist</h2></div>
-            <section class="productList">
-                <div class="product">
-                    <span class="name">Woman Haircut</span><span class="price">from 18£</span>
-                </div>
-                <div class="product">
-                    <span class="name">Man Haircut</span><span class="price">from 18£</span>
-                </div>
-                <div class="product">
-                    <span class="name">Braides</span><span class="price">from 18£</span>
-                </div>
-                <div class="product">
-                    <span class="name">Permanant</span><span class="price">from 18£</span>
-                </div>
-            </section>
+        <div class="pricelist" id="pricesection"><h2>Pricelist</h2></div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCat(event, 'Woman')">Women</button>
+            <button class="tablinks" onclick="openCat(event, 'Man')">Men</button>
+            <button class="tablinks" onclick="openCat(event, 'Child')">Children</button>
+        </div>
 
-        <div class="contact"><h5>Contact</h5></div>
+        <section class="productList" id="Woman">
+            <div class="product">
+                <span class="name">Woman Haircut</span><span class="price">from 18£</span>
+            </div>
+            <div class="product">
+                <span class="name">Styling</span><span class="price">from 18£</span>
+            </div>
+            <div class="product">
+                <span class="name">Braides</span><span class="price">from 18£</span>
+            </div>
+            <div class="product">
+                <span class="name">Permanant</span><span class="price">from 18£</span>
+            </div>
+        </section>
+
+        <section class="productList" id="Man">
+            <div class="product">
+                <span class="name">Haircut</span><span class="price">from 18£</span>
+            </div>
+            <div class="product">
+                <span class="name">Shave</span><span class="price">from 10£</span>
+            </div>
+            <div class="product">
+                <span class="name">Grooming</span><span class="price">from 15£</span>
+            </div>
+        </section>
+
+        <section class="productList" id="Child">
+            <div class="product">
+                <span class="name">Haircut</span><span class="price">from 10£</span>
+            </div>
+            <div class="product">
+                <span class="name">Style</span><span class="price">from 8£</span>
+            </div>
+        </section>
+
+        <div class="contact" id="contactsection"><h5>Contact</h5></div>
+
+        <iframe class="map" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.643956139842!2d-1.7546673842266236!3d52.46747527980429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b0f2c44004e1%3A0x5377ef7788f80170!2zMzkgU3RhdGlvbiBSZCwgTWFyc3RvbiBHcmVlbiwgQmlybWluZ2hhbSBCMzcgN0FCLCDOl869z4nOvM6tzr3OvyDOks6xz4POr867zrXOuc6_!5e0!3m2!1sel!2sgr!4v1607084842957!5m2!1sel!2sgr" 
+        frameborder="0" 
+        style="border:0;" 
+        allowfullscreen="" 
+        aria-hidden="false" 
+        tabindex="0">
+        </iframe>
+
+        <script type="application/ld+json">{ 
+            "@context": "https://schema.org", 
+            "@type": "Organization", 
+            "name": "MEK Hair Studio", 
+            "hasMap": "https://goo.gl/maps/tuCL5L54mS7dAUt26"
+            }
+        </script>
+
         <div class="container-contact">
-            <form>
+            <form action="mailto:info@bymek.com" method="post" enctype="text/plain">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your First name">
                 <label for="lname">Last Name</label>
@@ -120,47 +174,46 @@
                 <label for="mail">E- mail</label>
                 <input type="text" id="mail" name="email" placeholder="Your e- mail">
                 <label for="subject">Subject</label>
-                <textarea type="text" id="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea type="text" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Send">
             </form>
         </div>
-
-
+        
         <footer>
             <div class="rowf">
                 <div>
                     <ul class="columnf">
-                        <li class="title">About Us</li>
-                        <li>Company</li>
-                        <li>Gallery</li>
-                        <li>Where To Find</li>
-                    </ul>
-                    <ul class="columnf">
                         <li class="title">Opening Hours</li>
-                        <li>MON, SUN Closed</li>
-                        <li>TUE, WED 10AM-5:30PM</li>
-                        <li>THU, FRI 11AM-7PM</li>
-                        <li>SAT 10AM-5PM</li>
+                        <li>MON Closed</li>
+                        <li>TUE 10AM - 5:30PM</li>
+                        <li>WED 10AM - 5:30PM</li>
+                        <li>THU 11AM - 7PM</li>
+                        <li>FRI 11AM - 7PM</li>
+                        <li>SAT 10AM - 5PM</li>
+                        <li>SUN Closed</li>
                     </ul>
                     <ul class="columnf">
                         <li class="title">Contact</li>
-                        <li>39 Station Road, Marston Green, West Midlands, B37 7AB</li>
-                        <li>0121 779 2743</li>
-                        <li>07483 950113</li>
-                        <li>info@bymek.com</li>
+                        <li><img id="location" src="..\images\loc.jpg"> 39 Station Road,<br> Marston Green,<br> West Midlands,<br> B37 7AB</li>
+                        <li><img id="phone" src="..\images\phone.png"><a href="tel:0121 779 2743">0121 779 2743</a></li>
+                        <li><img id="mphone" src="..\images\mphone.png"><a href="tel:07483 950113">07483 950113</a></li>
+                        <li><img id="mailicon" src="..\images\mail.jpg"><a href="mailto:info@bymek.com">info@bymek.com</a></li>
                     </ul>
                     <ul class="columnf">
                         <li class="title">Social Media</li>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
+                        <li><i class="fa fa-facebook"></i></li>
                     </ul>
                 </div>
             </div>
         </footer>
-        
+
         <div class="dfoot">
-            <h5>Coryright © 2021 www.bymek.com | All Rights Reserved |  Design and Development by <a href="https://www.linkedin.com/in/euripides-chondros-201401134/">Evripidis Chondros</h5>
+            <h5>Coryright © <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> 
+              www.bymek.com | All Rights Reserved |  Development by 
+              <a href="https://www.linkedin.com/in/euripides-chondros-201401134/" target="_blank">Evripidis Chondros</h5>
         </div>
 
     </body>
