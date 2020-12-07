@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0%;
   font-family: Jura;
@@ -5,25 +9,28 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: white;
+  background-color: black;
   height: 110px;
+  width: 100%;
+  position: relative;
 }
 
 .topnav a {
   float: right;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   margin-top: 25px;
   padding: 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 17px; 
 }
 
 
 #navlogo{
-  height: 200px;
-  margin-top: -65px;
+  width: 350px;
+  height: auto;
+  margin-top: 7px;
   padding-left: 120px;
   padding-top: 20px;
 }
@@ -53,6 +60,8 @@ body {
   .topnav.responsive {position: relative;}
   #navlogo{
     padding-left: 10px;
+    width: 200px;
+    height: auto;
   }
   .topnav.responsive .icon {
     position: absolute;
