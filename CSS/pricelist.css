@@ -66,10 +66,10 @@
   }
 
   @media screen and (max-width:600px){
-    .tab{padding-left: 50px;}
+    .tab{padding-left: 35px;}
     .pricelist{font-size: 30px;}
     .productList{
-      width:200px;
+      width:250px;
       font-size: 15px;
     }
   }
