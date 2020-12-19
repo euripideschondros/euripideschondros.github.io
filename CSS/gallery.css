@@ -18,7 +18,7 @@
 }
 
 .imgcontainer > img:hover{
-	transform: scale(1.1);
+	transform: scale(1.9);
 }
 
 @media screen and (max-width:1024px){
@@ -36,6 +36,6 @@
 	}
 	.imgcontainer > img{
 		height: auto;
-		width: 140px;
+		width: 50%;
 	}
 }
