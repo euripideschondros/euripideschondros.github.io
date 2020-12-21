@@ -60,8 +60,9 @@
   @media screen and (max-width:1024px){
     .pricelist{font-size: 65px;}
     .productList{
-      width:50%;
-      font-size: 35px;
+      padding-left: 0%;
+      width:340px;
+      font-size: 13px;
     }
   }
 
