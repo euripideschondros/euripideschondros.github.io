@@ -1,0 +1,518 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /*scroll-behavior: smooth;*/
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fdf2e9;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.mek-logo-img {
+  margin: 1rem;
+  height: 5.4rem;
+  border-radius: 9px;
+}
+
+.main-nav {
+  /*margin: 0 auto;*/
+  padding: 0 3.2rem;
+  max-width: 130rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  padding-top: 3rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #fdf2e9;
+  font-weight: 500;
+  font-size: 2.2rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  height: 5rem;
+  margin-top: 2.7rem;
+  position: relative;
+  align-items: right;
+  border-radius: 9px;
+}
+
+.icon-mobile-nav {
+  height: 3.8rem;
+  width: 3.8rem;
+
+  background-color: #cf711f;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.section-hero {
+  max-width: 130rem;
+}
+
+.hero {
+  margin: 0 auto;
+  position: absolute;
+  left: 52rem;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  padding: 0 3.2rem;
+}
+
+.hero-text-box {
+  width: 50%;
+}
+
+.logo {
+  width: 60rem;
+  margin-bottom: 3rem;
+  border-radius: 9px;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  border-radius: 9px;
+  transition: background-color 300ms;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.about-section {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #fdf2e9;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.about {
+  margin: 0 auto;
+  max-width: 130rem;
+  text-align: center;
+}
+
+.about-header {
+  color: #45260a;
+}
+
+.about p {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.about h1 {
+  font-size: 4rem;
+  color: #e67e22;
+}
+
+.about h1,
+.about p {
+  font-weight: 400;
+  padding-top: 7.5rem;
+}
+
+.about p {
+  color: #555;
+}
+
+.containerr {
+  background-image: url("https://www.sjfinancialsolutions.co.uk/wp-content/uploads/2018/06/Map-Location-Birmingham.png");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-section {
+  max-width: 100%;
+}
+
+.service {
+  color: #e67e22;
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 4.2rem 4.2rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 9.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 3.2rem;
+}
+
+.service-img {
+  columns: #e67e22;
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 3.2rem;
+  border-radius: 50%;
+}
+
+.service-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4.8rem;
+  padding: 9.6rem;
+}
+
+.testimonial-img {
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+  color: #333;
+}
+
+.testimonail-name {
+  color: #777;
+}
+
+.book-section {
+  border-top: 3px solid #333;
+}
+
+.booking {
+  text-align: center;
+  width: 50%;
+}
+
+.book-heading {
+  color: #e67e22;
+}
+
+.book-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  /*margin-bottom: 3rem;*/
+}
+
+.book {
+  column-gap: 6rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  margin-left: -50%;
+}
+
+.book-now h1 {
+  font-size: 4rem;
+}
+
+.book-now h1,
+.book-now p {
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.book-now p {
+  color: #555;
+}
+
+.book-now a {
+  margin-bottom: 5rem;
+}
+
+.team-section {
+  background-color: #fdf2e9;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.subheading {
+  font-size: 4rem;
+  color: #e67e22;
+  align-content: center;
+  font-size: 4rem;
+}
+
+.grid-team {
+  margin-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.team-img {
+  width: 350px;
+  height: auto;
+  border-radius: 100px;
+}
+
+.team-name {
+  font-size: 3.2rem;
+  color: #e67e22;
+  font-weight: 400;
+  padding-bottom: 2.4rem;
+}
+
+.description {
+  font-size: 2.2rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.gallery-section {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #fdf2e9;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.heading-gallery {
+  color: #e67e22;
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 4.2rem 4.2rem;
+  text-align: center;
+}
+
+.map {
+  width: 100%;
+  height: 40rem;
+}
+
+.container-contact {
+  align-items: center;
+  border-radius: 5px;
+  background-color: #cf711f;
+  padding: 20px;
+  font-size: 2rem;
+  color: #45260a;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.btn--form {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  border-radius: 9px;
+  transition: background-color 300ms;
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+}
+
+.btn--form:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-links img {
+  width: 5rem;
+  height: auto;
+}
+
+.logo-img {
+  height: 8.2rem;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #777;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-nav,
+.road {
+  font-size: 1.6rem;
+  color: #767676;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}

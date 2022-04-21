@@ -1,0 +1,340 @@
+@media (max-width: 100em) {
+  .header {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 84em) {
+  .header {
+    height: 80vh;
+  }
+
+  .main-nav {
+    max-width: 120rem;
+  }
+
+  .section-hero {
+    max-width: 120rem;
+  }
+
+  .hero {
+    left: 45rem;
+    top: 47%;
+  }
+
+  .hero-description {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 47rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    height: 70vh;
+  }
+
+  .hero {
+    left: 43rem;
+    top: 50%;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 45rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.5rem;
+    padding: 1.3rem 2.9rem;
+  }
+
+  .about-section {
+    height: auto;
+  }
+
+  .team-section {
+    padding-top: 10rem;
+  }
+
+  .service-img {
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .team-img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 64em) {
+  .header {
+    height: 50vh;
+  }
+
+  .hero {
+    left: 36rem;
+    top: 35%;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .mek-logo-img {
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  .logo {
+    width: 35rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.3rem;
+    padding: 0.9rem 1.2rem;
+  }
+
+  .team-img {
+    width: 200px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 50em) {
+  .header {
+    height: 60vh;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+  .main-nav {
+    background-color: rgba(36, 34, 34, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .hero {
+    left: 28rem;
+    top: 35%;
+  }
+
+  .logo {
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text-box {
+    width: 65%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.5rem;
+
+    padding: 1.2rem 1.2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .team-img {
+    width: 150px;
+  }
+
+  .description {
+    padding-bottom: 1.5rem;
+  }
+
+  .container:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .container:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .grid-team {
+    grid-template-columns: 1fr;
+  }
+
+  .about h1 {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 1.8rem;
+  }
+
+  .service {
+    font-size: 3rem;
+  }
+
+  .grid {
+    row-gap: 1.4rem;
+  }
+
+  .service-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .book-now h1 {
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 3rem;
+  }
+
+  .team-name {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .book {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 39em) {
+  .header {
+    height: 35vh;
+  }
+
+  .mek-logo-img {
+    height: 4rem;
+    margin: 3rem;
+  }
+
+  .hero {
+    left: 15rem;
+    top: 25%;
+  }
+
+  .hero-text-box {
+    width: 90%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.1rem;
+
+    padding: 0.8rem 0.8rem;
+  }
+
+  .logo-img {
+    height: 6rem;
+  }
+
+  .about h1,
+  .about p {
+    padding-top: 3rem;
+  }
+
+  .team-section {
+    padding-top: 3rem;
+  }
+
+  .grid-team {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.3rem;
+
+    padding: 0.5rem 0.5rem;
+  }
+}
